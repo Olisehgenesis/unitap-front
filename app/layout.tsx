@@ -3,15 +3,8 @@ import { config } from "@/utils/wallet/wagmi";
 import { Noto_Sans } from "next/font/google";
 import UnitapProvider from "@/context";
 import Progressbar from "@/components/progress";
-import Footer from "@/components/layout/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import {
-  ConnectBrightIdModal,
-  BrightConnectionModal,
-  CreateBrightIdAccountModal,
-} from "@/components/containers/modals";
 import StyledJsxRegistry from "@/components/styled-components";
-import { ConnectWalletModal } from "@/components/containers/modals/ConnectWalletModal";
 import GoogleAnalytics from "@/components/google-analytics";
 
 import "./globals.scss";
@@ -19,7 +12,6 @@ import "./globals.scss";
 import { headers } from "next/headers";
 import { cookieToInitialState } from "wagmi";
 import { Providers } from "./providers";
-import AxiosApiManager from "@/components/axios-api-manager";
 import { ChakraUIProviders } from "@/components/ChakraProvider";
 import { HeaderSelection } from "@/components/HeaderSelection";
 import { ProviderSelection } from "@/components/ProviderSelection";
@@ -56,12 +48,7 @@ export default async function RootLayout({
           <UnitapProvider>
             <StyledJsxRegistry>
               <ProviderSelection>{children}</ProviderSelection>
-              <ConnectBrightIdModal />
-              <BrightConnectionModal />
-              <CreateBrightIdAccountModal />
-              <ConnectWalletModal />
             </StyledJsxRegistry>
-            <AxiosApiManager />
           </UnitapProvider>
         </Providers>
 

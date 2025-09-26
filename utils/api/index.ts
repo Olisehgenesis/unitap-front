@@ -1,10 +1,4 @@
-export * from "./auth";
-export * from "./gastap";
 export * from "./landing";
-export * from "./tokentap";
-export * from "./prizetap";
-export * from "./provider-dashboard";
-export * from "./social-accounts";
 
 export const serverFetch = async (url: string, init?: RequestInit) => {
   if (init?.headers) {
