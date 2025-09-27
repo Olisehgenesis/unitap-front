@@ -1,6 +1,6 @@
 "use client";
 
-import { useTasks } from "@/context/TaskProvider";
+import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import Select from "@/components/ui/Select";
 
@@ -19,7 +19,17 @@ const FilterButton = ({ children, onClick, value, selectedFilter }: { children: 
 };
 
 export const Searchbar = () => {
-  const { chains, selectedChain, setSelectedChain, filter, setFilter, search, setSearch } = useTasks();
+  const chains = [
+    { pk: "ethereum", chainName: "Ethereum" },
+    { pk: "polygon", chainName: "Polygon" },
+    { pk: "bsc", chainName: "BSC" },
+    { pk: "arbitrum", chainName: "Arbitrum" },
+    { pk: "optimism", chainName: "Optimism" },
+  ];
+  
+  const [selectedChain, setSelectedChain] = useState<string | null>(null);
+  const [filter, setFilter] = useState<"all" | "raffle" | "fcfs">("all");
+  const [search, setSearch] = useState<string>("");
 
   return (
     <div className="mt-28 flex h-20 items-center gap-2 rounded-full border px-5 py-3 shadow-primary-button">

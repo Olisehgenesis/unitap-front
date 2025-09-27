@@ -45,8 +45,8 @@ export const Footer = () => {
                   priority={false}
                   height={31}
                   width={31}
-                  src="/new_logo.svg"
-                  alt="Unitap"
+                  src="/img/logocode3spaces.png"
+                  alt="Code 3 Spaces"
                 />
               </Center>
               <chakra.span
@@ -56,7 +56,7 @@ export const Footer = () => {
                 fontWeight="600"
                 fontSize="33px"
               >
-                UNITAP
+                CODE 3 SPACES
               </chakra.span>
             </HStack>
             <Text
@@ -67,7 +67,7 @@ export const Footer = () => {
               mt={{ base: "16px", md: "33px" }}
               fontSize={{ base: "14px" }}
             >
-              Seamless Loyalty Onboarding for the Decentralized Future
+              Building East Africa&apos;s Blockchain Future Through Startup Incubation
             </Text>
           </VStack>
           <SimpleGrid
@@ -151,7 +151,7 @@ export const Footer = () => {
             color="white"
             fontSize="14px"
           >
-            © Copyright 2025. All rights reserved.
+            © 2025 Code 3 Spaces. Building Uganda&apos;s Tech Future.
           </Text>
         </Stack>
       </Container>

@@ -12,34 +12,63 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../../app/new-landing/components/Container";
 
-const AppButton = () => {
+const ContactUsButton = () => {
   return (
     <Button
-      as={Link}
-      href="/quests"
-      width={{ base: "130px", md: "184px" }}
-      height={{ base: "40px", md: "64px" }}
+      width={{ base: "120px", md: "150px" }}
+      height={{ base: "40px", md: "50px" }}
       textTransform="uppercase"
-      bg="#FCB2FF"
-      position="relative"
-      borderRadius="36px"
-      p="0"
-      m="0"
-      fontSize={{ base: "14px", md: "18px" }}
-      boxShadow="4px 6px 0px 0px #000000, 0px 4px 0px 0px #FFFFFF inset"
-      border="1px solid black"
-      _before={{
-        position: "absolute",
-        content: '""',
-        bg: "transparent",
-        bottom: "0",
-        left: "0",
-        height: "full",
-        width: "full",
-        borderRadius: "36px",
-      }}
+      bg="transparent"
+      color="#000"
+      border="2px solid #000"
+      borderRadius="12px"
+      fontSize={{ base: "12px", md: "14px" }}
+      fontWeight="600"
+      fontFamily="nunito"
+      _hover={{ bg: "#000", color: "#fff" }}
+      onClick={() => window.open("mailto:code3spaces@gmail.com", "_blank")}
     >
-      open app
+      Contact Us
+    </Button>
+  );
+};
+
+const TelegramButton = () => {
+  return (
+    <Button
+      width={{ base: "120px", md: "150px" }}
+      height={{ base: "40px", md: "50px" }}
+      textTransform="uppercase"
+      bg="#000"
+      color="#fff"
+      borderRadius="12px"
+      fontSize={{ base: "12px", md: "14px" }}
+      fontWeight="600"
+      fontFamily="nunito"
+      _hover={{ bg: "#333" }}
+      onClick={() => window.open("https://t.me/onchainug", "_blank")}
+    >
+      Telegram
+    </Button>
+  );
+};
+
+const TwitterButton = () => {
+  return (
+    <Button
+      width={{ base: "120px", md: "150px" }}
+      height={{ base: "40px", md: "50px" }}
+      textTransform="uppercase"
+      bg="#1DA1F2"
+      color="#fff"
+      borderRadius="12px"
+      fontSize={{ base: "12px", md: "14px" }}
+      fontWeight="600"
+      fontFamily="nunito"
+      _hover={{ bg: "#0d8bd9" }}
+      onClick={() => window.open("https://twitter.com/code3spaces", "_blank")}
+    >
+      Twitter
     </Button>
   );
 };
@@ -57,29 +86,28 @@ export const TopBar = () => {
         <HStack px="29px" width="full" justifyContent="space-between">
           <Link href="/">
             <HStack columnGap="7px">
-              <Center
-                rounded="full"
-                boxSize={{ base: "31px", md: "44px" }}
-                bg="black"
-              >
-                <Img
-                  width={{ base: 18, md: 25 }}
-                  height={{ base: 18, md: 25 }}
-                  src="/new_logo.svg"
-                  alt="Unitap"
-                />
-              </Center>
+              <Image
+                width={25}
+                height={25}
+                src="/img/logocode3spaces.png"
+                alt="Code 3 Spaces"
+                style={{ objectFit: "contain" }}
+              />
               <Text
                 position="relative"
                 fontFamily="Kodchasan"
                 fontWeight="600"
                 fontSize={{ base: "19px", md: "27px" }}
               >
-                UNITAP
+                CODE 3 SPACES
               </Text>
             </HStack>
           </Link>
-          <AppButton />
+          <HStack spacing="12px">
+            <ContactUsButton />
+            <TelegramButton />
+            <TwitterButton />
+          </HStack>
         </HStack>
       </Container>
     </Box>

@@ -17,9 +17,9 @@ const AcademyButton = () => (
     fontWeight="700"
     mb={{ base: "173px", md: "103px", lg: "initial" }}
     borderRadius="36px"
+    onClick={() => window.open("https://t.me/olisehgenesis", "_blank")}
   >
-    {/* Launch Unitap Academy */}
-    Coming soon
+    Join Code 3 Spaces
   </Button>
 );
 export const Web3 = () => {
@@ -88,10 +88,10 @@ export const Web3 = () => {
             color="black"
             textAlign="center"
           >
-            From <chakra.span fontWeight="600">Web2</chakra.span> to
+            Building <chakra.span fontWeight="600">East Africa&apos;s</chakra.span>
             <chakra.span background="#000" fontWeight="600" color="white">
               {" "}
-              Web3!
+              Blockchain Future!
             </chakra.span>
           </chakra.span>
           <Text
@@ -104,10 +104,9 @@ export const Web3 = () => {
             fontWeight="400"
             fontFamily="Nunito"
           >
-            At Unitap, we believe the future of loyalty lies in bridging the gap
-            between Web2 and Web3. Our platform is designed not only to retain
-            and engage existing Web3 users but also to onboard entirely new
-            audiences from Web2.
+            Code 3 Spaces is bridging the incubation gap in East Africa for Ethereum/blockchain adoption. 
+            We develop technical skills in underrepresented regions, build community-rooted tools addressing 
+            African use cases, and provide continuous access to blockchain resources.
           </Text>
           <AcademyButton />
         </VStack>

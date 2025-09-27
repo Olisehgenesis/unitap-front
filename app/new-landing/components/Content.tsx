@@ -1,8 +1,12 @@
 "use client";
-import { Box } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 import { Values } from "./Values";
 import { Features } from "./Features";
 import { Web3 } from "./Web3";
+import { Countdown } from "./Countdown";
+import { TechConCard } from "./TechConCard";
+import { TeamSection } from "./TeamSection";
+import { ContactSection } from "./ContactSection";
 import { RefObject } from "react";
 import { Container } from "./Container";
 
@@ -35,8 +39,41 @@ export const Content = ({ valuesRef }: ContentProps) => {
         backgroundRepeat="repeat"
         backgroundImage="url(/home/desktop-pattern.png)"
         width="full"
+        py="60px"
+      >
+        <Container>
+          <VStack spacing="60px">
+            <Countdown />
+            <TechConCard />
+          </VStack>
+        </Container>
+      </Box>
+      <Box
+        backgroundRepeat="repeat"
+        backgroundImage="url(/home/desktop-pattern.png)"
+        width="full"
+        py="60px"
+      >
+        <Container>
+          <TeamSection />
+        </Container>
+      </Box>
+      <Box
+        backgroundRepeat="repeat"
+        backgroundImage="url(/home/desktop-pattern.png)"
+        width="full"
       >
         <Web3 />
+      </Box>
+      <Box
+        backgroundRepeat="repeat"
+        backgroundImage="url(/home/desktop-pattern.png)"
+        width="full"
+        py="60px"
+      >
+        <Container>
+          <ContactSection />
+        </Container>
       </Box>
     </>
   );

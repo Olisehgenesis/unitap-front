@@ -45,37 +45,20 @@ const navItems = [
     route: RoutePath.HOME,
   },
   {
-    name: "Gas Tap",
-    link: RoutePath.FAUCET,
-    icon: "/assets/images/navbar/navbar-dropdown-gas-tap.svg",
+    name: "About",
+    link: RoutePath.ABOUT,
+    icon: "/assets/images/navbar/navbar-dropdown-home.svg",
     iconWidth: "auto",
     iconHeight: "28px",
-    route: RoutePath.FAUCET,
+    route: RoutePath.ABOUT,
   },
   {
-    name: "Token Tap",
-    link: RoutePath.TOKEN,
-    icon: "/assets/images/navbar/navbar-dropdown-token-tap.svg",
+    name: "Contact",
+    link: RoutePath.CONTACT,
+    icon: "/assets/images/navbar/navbar-dropdown-home.svg",
     iconWidth: "auto",
     iconHeight: "28px",
-    route: RoutePath.TOKEN,
-  },
-  {
-    name: "Prize Tap",
-    link: RoutePath.PRIZE,
-    icon: "/assets/images/landing/prizetap-icon.png",
-    iconWidth: "33px",
-    iconHeight: "auto",
-    route: RoutePath.PRIZE,
-  },
-
-  {
-    name: "Incentive Center",
-    link: RoutePath.PROVIDERDASHBOARD,
-    icon: "/assets/images/landing/contributionHub.svg",
-    iconWidth: "33px",
-    iconHeight: "auto",
-    route: RoutePath.PROVIDERDASHBOARD,
+    route: RoutePath.CONTACT,
   },
 ];
 
@@ -119,20 +102,6 @@ const NavbarDropdown = ({ className, closeDropdown }: NavbarDropdownProps) => {
         );
       })}
 
-      <Link
-        onClick={() => closeDropdown()}
-        href={RoutePath.NFT}
-        className={`navbar-dropdown__item relative z-10 mt-12 flex !h-auto cursor-pointer items-center justify-between overflow-hidden rounded-xl border-gray00 bg-gray00 bg-g-primary p-1 py-2.5 pl-4 pr-2 transition-all duration-75 before:absolute before:inset-[2px] before:-z-10 before:block before:rounded-lg before:bg-gray00 before:content-[''] hover:bg-gray20`}
-      >
-        <p className="bg-primaryGradient bg-clip-text text-sm font-semibold text-transparent">
-          Unitap Pass NFT
-        </p>
-        <img
-          src="/assets/images/navbar/navbar-dropdown-mint.svg"
-          width="auto"
-          height="26px"
-        />
-      </Link>
     </div>
   );
 };

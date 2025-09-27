@@ -15,103 +15,115 @@ const valueHeaderConfig = {
 export const heroBrands: heroBrand[] = [
   {
     id: 0,
+    name: "Code 3 Spaces",
+    href: "https://t.me/olisehgenesis",
+    src: "/img/logocode3spaces.png",
+  },
+  {
+    id: 1,
+    name: "TechCon Kampala",
+    href: "#techcon",
+    src: "/img/logotechcon.png",
+  },
+  {
+    id: 2,
     name: "Arbitrum",
     href: "https://arbitrum.io/",
     src: "/home/brands/ARBITRUM.svg",
   },
   {
-    id: 1,
+    id: 3,
     name: "Optimism ",
     href: "https://www.optimism.io/",
     src: "/home/brands/OPTIMISM.svg",
   },
   {
-    id: 2,
+    id: 4,
     name: "Polygon",
     href: "https://polygon.technology/",
     src: "/home/brands/POLYGON.svg",
   },
   {
-    id: 3,
+    id: 5,
     name: "Metis",
     href: "https://www.metis.io/",
     src: "/home/brands/METIS.svg",
   },
-  { id: 4, name: "XDC", href: "https://xdc.org/", src: "/home/brands/XCD.svg" },
+  { id: 6, name: "XDC", href: "https://xdc.org/", src: "/home/brands/XCD.svg" },
   {
-    id: 5,
+    id: 7,
     name: "Celo",
     href: "https://celo.org/",
     src: "/home/brands/CELO.svg",
   },
   {
-    id: 6,
+    id: 8,
     name: "Glo Dollar",
     href: "https://www.glodollar.org/",
     src: "/home/brands/GLO.svg",
   },
   {
-    id: 7,
+    id: 9,
     name: "Gnosis",
     href: "https://www.gnosis.io/",
     src: "/home/brands/GNOSIS.svg",
   },
   {
-    id: 8,
+    id: 10,
     name: "Linea",
     href: "https://linea.build/",
     src: "/home/brands/LINEA.svg",
   },
   {
-    id: 9,
+    id: 11,
     name: "ENS",
     href: "https://ens.domains/",
     src: "/home/brands/ens.svg",
   },
   {
-    id: 10,
+    id: 12,
     name: "Sonic",
     href: "https://blog.sonic.game/",
     src: "/home/brands/sonic.svg",
   },
   {
-    id: 11,
+    id: 13,
     name: "Questbook",
     href: "https://www.questbook.xyz/",
     src: "/home/brands/questbook.svg",
   },
   {
-    id: 12,
+    id: 14,
     name: "Giveth",
     href: "https://giveth.io/",
     src: "/home/brands/giveth.svg",
   },
   {
-    id: 13,
+    id: 15,
     name: "Gitcoin",
     href: "https://www.gitcoin.co/",
     src: "/home/brands/gitcoin.svg",
   },
   {
-    id: 14,
+    id: 16,
     name: "Octant",
     href: "https://octant.app/",
     src: "/home/brands/octant.svg",
   },
   {
-    id: 15,
+    id: 17,
     name: "Pairwise",
     href: "https://x.com/pairwisevote",
     src: "/home/brands/pairwise.svg",
   },
   {
-    id: 16,
+    id: 18,
     name: "BrightID",
     href: "https://www.brightid.org/",
     src: "/home/brands/bright id.svg",
   },
   {
-    id: 17,
+    id: 19,
     name: "Thrive",
     href: "https://www.thriveprotocol.com/",
     src: "/home/brands/thrive.svg",
@@ -143,24 +155,22 @@ export const values = [
         display="inline-block"
       >
         <chakra.span display={{ md: "block" }}>
-          Track <chakra.span fontWeight="800"> on-chain,</chakra.span>
+          Build <chakra.span fontWeight="800">dApps</chakra.span> that
         </chakra.span>{" "}
         <chakra.span display={{ md: "block" }}>
           {" "}
-          <chakra.span fontWeight="800"> off-chain, </chakra.span>or{" "}
+          solve <chakra.span fontWeight="800">local challenges</chakra.span>{" "}
         </chakra.span>
-        <chakra.span fontWeight="800">social media</chakra.span> activities.
+        <chakra.span fontWeight="800">in East Africa</chakra.span>
       </chakra.span>
     ),
     description:
-      "From on-chain transactions and staking to referrals and social activities, track your user’s actions to identify and reward your most loyal customers.",
+      "Code 3 Spaces incubates 10-15 startups per cohort building dApps in payments & financial inclusion, agriculture & supply chain, identity & civic tech, and business integration with Web3.",
     img: {
       src: {
         base: "/home/values/value-1-mini.png",
         md: "/home/values/value-1.png",
       },
-      // maxW: { base: "453px", lg: "653px" },
-      // maxH: { base: "419px", lg: "619px" },
       ratio: { base: 333 / 324, md: 653 / 619 },
       mx: "auto",
     },
@@ -176,27 +186,25 @@ export const values = [
       >
         <chakra.span display="block">
           {" "}
-          Build <chakra.span fontWeight="800">Campaigns </chakra.span>with
+          University <chakra.span fontWeight="800">Chapters</chakra.span>{" "}
         </chakra.span>
 
         <chakra.span>
           <chakra.span display="block" fontWeight="800">
             {" "}
-            Points, badges,
+            Across Uganda
           </chakra.span>{" "}
-          and <chakra.span fontWeight="800">leaderboards</chakra.span>
+          and <chakra.span fontWeight="800">East Africa</chakra.span>
         </chakra.span>
       </chakra.span>
     ),
     description:
-      "Unitap’s business intelligence (BI) enables you to craft highly effective campaigns for your project, and our AI assistant then helps you refine and personalize them for the best results.",
+      "Active chapters at ISBAT University, Victoria University, Cavendish University, Kyambogo University. Coming soon: Makerere University, Mbarara University, KIU, and Nkumba University.",
     img: {
       src: {
         base: "/home/values/value-2-mini.png",
         md: "/home/values/value-2.png",
       },
-      // maxW: { base: "428px", lg: "628px" },
-      // maxH: { base: "300px", lg: "400px" },
       ratio: { base: 314 / 226, md: 628 / 400 },
     },
   },
@@ -224,27 +232,25 @@ export const values = [
         display="inline-block"
       >
         <chakra.span display={{ base: "inline", md: "block" }}>
-          <chakra.span fontWeight="800">Engage</chakra.span> users{" "}
+          <chakra.span fontWeight="800">Code Fridays</chakra.span> and{" "}
         </chakra.span>
         <chakra.span display={{ base: "inline", md: "block" }}>
-          through<chakra.span fontWeight="800"> incentive tools</chakra.span>
+          intensive <chakra.span fontWeight="800">coding sessions</chakra.span>
         </chakra.span>
         <chakra.span display={{ base: "inline", md: "block" }}>
           {" "}
-          like raffles and jackpots{" "}
+          for hands-on learning{" "}
         </chakra.span>
       </chakra.span>
     ),
     description:
-      "Take advantage of our extensive suite of tools to create a truly engaging campaign. then, when you need even more flexibility, build your own custom solutions on top of Unitap.",
+      "Regular Code Fridays where participants build projects from scratch, intensive coding sessions including overnight sessions for deep focus, and structured monthly events (2 per month: 1 online, 1 hybrid at university chapters).",
     img: {
       src: {
         base: "/home/values/value-3-mini.png",
         md: "/home/values/value-3.png",
       },
       mb: { base: "20px", md: "initial" },
-      // maxW: { base: "472px", lg: "672px" },
-      // maxH: { base: "418px", lg: "618px" },
       ratio: { base: 336 / 323, md: 672 / 618 },
     },
   },
@@ -257,25 +263,25 @@ export const values = [
         textAlign={{ base: "center", md: "initial" }}
       >
         <chakra.span display="block">
-          <chakra.span fontWeight="800">Analyze </chakra.span>
-          {" results to "}
-          <chakra.span fontWeight="800">refine </chakra.span> future
+          <chakra.span fontWeight="800">2025 Goals</chakra.span>
+          {" - "}
+          <chakra.span fontWeight="800">10+ projects</chakra.span> deployed
         </chakra.span>
         <chakra.span display="block">
-          campaigns and drive more{" "}
-          <chakra.span fontWeight="800">retention</chakra.span>.
+          and <chakra.span fontWeight="800">100+ active</chakra.span> community
+        </chakra.span>
+        <chakra.span display="block">
+          members across <chakra.span fontWeight="800">East Africa</chakra.span>
         </chakra.span>
       </chakra.span>
     ),
     description:
-      "Monitor real-time performance metrics from your marketing campaign. Then, harness those insights to refine your tactics, engage your audience more effectively, and continuously optimize your overall marketing strategy for better results.",
+      "Targeting 10+ projects deployed, 20+ developers per university chapter, 30+ smart contracts deployed, 100+ active community members, and 40+ active developers onboarded by end of 2025.",
     img: {
       src: {
         base: "/home/values/value-4-mini.png",
         md: "/home/values/value-4.png",
       },
-      // maxW: { base: "478px", lg: "678px" },
-      // maxH: { base: "366px", lg: "466px" },
       ratio: { base: 339 / 259, md: 678 / 466 },
     },
   },
@@ -285,28 +291,28 @@ export const featuresData = [
   {
     id: 0,
     img: "/home/features/cross-chain.png",
-    title: "Cross Chain",
+    title: "Startup Incubation",
     description:
-      "Built on top of EigenLayer, Unitap is chain-independent, allowing easy expansion across all EVM and Non-EVM ecosystems",
+      "3-6 month cohort-based programs incubating 10-15 startups building dApps in payments, agriculture, identity, and business integration with Web3",
   },
   {
     id: 1,
     img: "/home/features/brain.png",
-    title: "Flexible",
-    description: "Create branded loyalty programs tailored to your community.",
+    title: "Code Fridays",
+    description: "Regular events where participants build projects from scratch, fostering innovation and hands-on learning",
   },
   {
     id: 2,
     img: "/home/features/plug-play.png",
-    title: "Plug and Play",
+    title: "University Chapters",
     description:
-      "Deploy your campaign in minutes and enjoy plenty of production-ready tools",
+      "Active chapters across Uganda universities with structured monthly events and hybrid learning opportunities",
   },
   {
     id: 3,
     img: "/home/features/decentralized.png",
-    title: "Decentralized",
+    title: "Community Building",
     description:
-      "EigenLayer enables Unitap to operate in a decentralized, transparent and trustless manner",
+      "Building East Africa's largest blockchain developer community with continuous education and mentorship programs",
   },
 ];

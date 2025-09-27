@@ -52,7 +52,7 @@ const UButton = (props: UButtonProps) => {
       >
         {children}
       </button>
-      <img src={icon} />
+      <img src={icon} alt="Button icon" />
     </div>
   )
 }

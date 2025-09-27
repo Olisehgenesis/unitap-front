@@ -120,23 +120,32 @@ export const Hero = ({ valuesRef }: HeroProps) => {
               <Box
                 mx={{ base: "auto", md: "initial" }}
                 mb={{ base: "7px", md: "0px" }}
+                position="relative"
+                width={heroTextImageWidth ?? 100}
+                height={heroTextImageHeight ?? 100}
               >
                 <Image
-                  style={{ maxHeight: heroTextImageHeight }}
+                  src="/img/logocode3spaces.png"
+                  alt="Code 3 Spaces"
+                  fill
+                  style={{ 
+                    objectFit: "contain",
+                    maxHeight: heroTextImageHeight 
+                  }}
                   loading="eager"
-                  width={heroTextImageWidth ?? 100}
-                  height={heroTextImageHeight ?? 100}
-                  src="/home/hero/hero-header.png"
-                  alt="hero"
                 />
-              </Box>
-              <Text fontWeight="800">Loyalty</Text>
+              </Box>Incubating project that solve local challenges through continuous education and hands-on development. Join  us for TechCon Kampala 2025 - The Future Gets Built Here.
+              <Text fontWeight="800">Emerging</Text>
             </Stack>
             <chakra.span fontWeight="300" whiteSpace="nowrap">
-              Platform For
+              Tech  Startup
             </chakra.span>
             {"\n"}
-            <Text fontWeight="800">Web3</Text>
+            <Text fontWeight="800">Incubator</Text>
+            {"\n"}
+            <chakra.span fontWeight="300" whiteSpace="nowrap">
+              Kampala, Uganda
+            </chakra.span>
           </chakra.span>
           <VStack mx={{ base: "auto", md: "initial" }}>
             <HStack rowGap="8px">
@@ -172,8 +181,7 @@ export const Hero = ({ valuesRef }: HeroProps) => {
                 textAlign={{ base: "center", md: "initial" }}
                 mt={{ base: "14px", md: "0" }}
               >
-                Build and launch marketing campaigns to acquire, retain, and
-                engage your community
+                Building dApps that solve local challenges through continuous education and hands-on development. Join TechCon Kampala 2025 - The Future Gets Built Here.
               </Text>
             </HStack>
           </VStack>
@@ -229,9 +237,9 @@ export const Hero = ({ valuesRef }: HeroProps) => {
             fontWeight="800"
           >
             <chakra.span width="fit-content" bg="#000" color="#FFFFFF">
-              $20B
+              10+
             </chakra.span>
-            <chakra.span> ecosystems </chakra.span>
+            <chakra.span> Ugandas Big Companies </chakra.span>
           </chakra.span>
         </chakra.span>
         <Brands />
@@ -334,9 +342,9 @@ export const Hero = ({ valuesRef }: HeroProps) => {
 
             <chakra.span fontWeight="800">
               <chakra.span width="fit-content" bg="#000" color="#FFFFFF">
-                $20B
+                5+
               </chakra.span>
-              <chakra.span> ecosystems </chakra.span>
+              <chakra.span> Universities </chakra.span>
             </chakra.span>
           </chakra.span>
           <Brands />

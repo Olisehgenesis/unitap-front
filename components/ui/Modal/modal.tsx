@@ -1,10 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { Spaceman } from "@/constants/spaceman";
 import Icon from "@/components/ui/Icon";
 import { APIErrorsSource } from "@/types";
-import { ErrorsContext } from "@/context/errorsProvider";
 import {
   ModalWrapper,
   ModalContent,
@@ -16,7 +14,6 @@ type props = {
   titleLeft?: string;
   className?: string;
   isOpen: boolean;
-  spaceman?: Spaceman;
   children: React.ReactNode;
   size?: "small" | "medium" | "large" | number;
   closeModalHandler: () => void;
@@ -39,7 +36,8 @@ const Modal = ({
   bodyClassName,
   classNames,
 }: props) => {
-  const { getError } = React.useContext(ErrorsContext);
+  // Mock error function
+  const getError = (source: APIErrorsSource) => null;
 
   return (
     <>

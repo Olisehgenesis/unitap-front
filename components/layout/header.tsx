@@ -7,8 +7,6 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import LandingButton from "../containers/landing/button";
 
-const UserAuthStatus = dynamic(() => import("./auth"), { ssr: false });
-
 // const nunitoFont = Kodchasan({
 //   weight: ["600"],
 //   display: "swap",
@@ -19,23 +17,20 @@ const UserAuthStatus = dynamic(() => import("./auth"), { ssr: false });
 const Header = () => {
   return (
     <header className="top-0 z-20 flex w-full flex-wrap items-center justify-center gap-y-4 px-8 py-14 text-xs dark:bg-gray10">
-      <Link href={"/"}>
+      <Link href={"/"} className="flex items-center gap-3">
         <Image
-          src="/assets/images/landing/unitap-logo.svg"
-          width={182}
-          height={54}
-          alt="unitap"
+          src="/img/logocode3spaces.png"
+          width={60}
+          height={30}
+          alt="Code 3 Spaces"
+          style={{ objectFit: "contain" }}
         />
+        <span className="text-xl font-bold text-black dark:text-white">
+          Code 3 Spaces
+        </span>
       </Link>
 
       <div className="hidden flex-1 md:flex"></div>
-
-      <Link href={"/dashboard"}>
-        <LandingButton className="relative z-20 flex bg-landing-secondary px-5 py-3 text-base uppercase">
-          Incentive center
-        </LandingButton>
-      </Link>
-      <UserAuthStatus />
     </header>
   );
 };

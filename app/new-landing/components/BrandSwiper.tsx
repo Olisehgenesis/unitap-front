@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { heroBrand } from "../types";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
+import "swiper/css";
 
 const ChakraSwiper = chakra(Swiper);
 
@@ -46,7 +47,7 @@ export const BrandsSwiper = ({ brands, reverse }: BrandsSwiperProps) => {
           marginBottom: "5px",
         },
         ".swiper-wrapper": {
-          "transition-timing-function": "linear",
+          transitionTimingFunction: "linear",
         },
       }}
     >

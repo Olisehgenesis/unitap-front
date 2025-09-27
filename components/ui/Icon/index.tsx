@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 import { IconWrapper } from "./icon.style";
 
 interface IconProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -22,7 +23,7 @@ const Icon = ({ iconSrc, hoverable, className, ...props }: IconProps) => (
     {...props}
     className={`${hoverable ? "cursor-pointer" : ""} ${className}`}
   >
-    <img src={iconSrc} alt={props.alt} />
+    <Image src={iconSrc} alt={props.alt || ""} width={24} height={24} />
   </IconWrapper>
 );
 
